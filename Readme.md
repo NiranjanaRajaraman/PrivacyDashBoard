@@ -43,9 +43,128 @@ The system consists of:
 3. **Visualization components**
 4. **Interactive dashboard interface**
 
-The user only interacts with the dashboard — no programming knowledge is required to use it.
+The user only interacts with the dashboard — no programming knowledge is required to use the dashboard.
 
 ---
 
 ## Project Structure
+privacyRisq/
+│
+├── dashboard.py
+├── analysis.ipynb
+│
+├── components/
+│ ├── data_handler.py
+│ ├── graph_actor.py
+│ ├── graph_actor_protection.py
+│ ├── graph_heatmap.py
+│ ├── graph_motiv_asset.py
+│ ├── graph_motiv_exposure.py
+│ ├── graph_tech_sensitivity.py
+│ └── graph_tech_sophistication.py
+│
+├── data/
+│ └── incidents-export-2026-02-01.csv
+│
+├── assets/
+│ └── style.css
+│
+└── requirements.txt
+
+
+---
+
+## Explanation of Key Components
+
+### 1. `dashboard.py` 
+This file starts the dashboard application.
+
+It:
+- Starts the web-based dashboard
+- Defines the layout (what the user sees on the screen)
+- Combines multiple graphs into one interactive interface
+- Launches the application locally
+
+---
+
+### 2. `analysis.ipynb`
+
+This is a Jupyter Notebook used for:
+
+ - Initial data exploration
+ - Understanding trends and patterns
+ - Experimenting before finalizing the dashboard
+
+This file is mainly for analysis and learning, not required to run the dashboard.
+
+---
+
+### 3. `components/`
+This folder contains modular building blocks of the dashboard.
+Each file is responsible for one specific type of visualization.
+
+Examples:
+
+- `graph_actor.py` → Visualizes different actors involved in incidents using various techniques
+
+- `graph_motiv_asset.py` → Displays motivation vs asset analysis
+
+- `graph_tech_sensitivity.py` → Technical sensitivity insights
+
+These are the independent chart modules that are plugged into the dashboard.
+
+This modular design improves clarity and maintainability.
+
+---
+
+### 4. `data_handler.py`
+Responsible for:
+
+- Loading CSV files  
+- Cleaning and preparing data  
+- Ensuring compatibility with visualization modules  
+
+It acts as the bridge between raw data and visual output.
+
+---
+
+### 5. `data/`
+Contains all CSV datasets used in the dashboard.
+
+- CSV files store incident records
+- Each row represents an incident
+- Columns describe attributes like motivation, actor, exposure, etc.
+
+These files can be opened in Excel for inspection.
+
+---
+
+### 6. `assets/style.css`
+Controls layout and visual styling of the dashboard:
+
+- Colors  
+- Spacing  
+- Fonts  
+- Design consistency  
+
+---
+
+### 7. `requirements.txt`
+
+This file lists all software libraries required to run the project.
+It ensures the project can be set up consistently on different machines.
+
+---
+
+## How to Run the Dashboard
+
+### Step 1: Install Python  
+Ensure Python 3.9+ is installed.
+
+### Step 2: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+
+
 
