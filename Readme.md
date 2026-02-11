@@ -49,7 +49,7 @@ The user only interacts with the dashboard — no programming knowledge is requi
 
 ## Project Structure
 ```
-privacyRisq/
+PrivacyDashBoard/
 │
 ├── dashboard.py
 ├── analysis.ipynb
