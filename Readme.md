@@ -163,8 +163,49 @@ Ensure Python 3.9+ is installed.
 
 ### Step 2: Install Dependencies
 
-```bash
-pip install -r requirements.txt
+`pip install -r requirements.txt`
+
+### Step 3: Start the dashboard
+`python dashboard.py`
+
+### Ste 4 : Open the provided local web address in a browser
+ - Example: `http://127.0.0.1:8050`
+
+# Troubleshooting Guide
+
+This section provides clear, step-by-step solutions for common issues when running the PrivacyRisq dashboard.
+
+---
+
+## 1. CSV File Not Loading Correctly (Separator Issue)
+
+### Problem
+- Graphs are empty  
+- Data looks incorrect  
+- Errors occur when loading CSV files  
+
+### Cause
+Some CSV files use:
+- `,` (comma) as separator  
+- `;` (semicolon) as separator (common in European Excel exports)
+
+If the wrong separator is used, the data will not load properly.
+
+### Solution
+
+#### Step 1: Check the CSV File
+1. Open the CSV file in a text editor.
+2. Look at how values are separated:
+   - `value1,value2,value3` → use comma
+   - `value1;value2;value3` → use semicolon
+
+#### Step 2: Update the Code (if needed)
+
+Open `data_handler.py` and modify the CSV loading line:
+
+```python
+pd.read_csv("data/your_file.csv", sep=";")
+
 
 
 
