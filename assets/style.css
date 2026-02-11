@@ -1,0 +1,102 @@
+/* ===== GLOBAL APP STYLE ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.app-container {
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* ======= HEADER TITLE STYLE ====== */
+.header {
+ text-align: center; 
+ color: #1a365d;
+ margin-bottom: 5px;
+}
+
+.header-description {
+ text-align: center; 
+ color: #4a5568;
+ margin-bottom: 30px;
+}
+
+/* ===== SUMMARY CARDS ===== */
+.summary-main {
+    margin: 0;
+    color: #2b6cb0
+}
+
+.summary-sub {
+    margin: 0;
+    color: #718096;
+    font-weight: bold;
+}
+
+
+.summary-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    color: #1e293b; /* darker slate */
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+.section-title-description {
+   color: #718096;
+   font-size: 14px 
+}
+.dropdown-left {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%
+}
+.dropdown-right {
+    width: 48%;
+    display: inline-block
+}
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+/* Styling for the Network Graph Container */
+.network-container {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1); /* Subtle blue glow */
+    border: 1px solid #d1d5db;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.network-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
