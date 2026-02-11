@@ -205,6 +205,48 @@ Open `data_handler.py` and modify the CSV loading line:
 
 ```python
 pd.read_csv("data/your_file.csv", sep=";")
+```
+---
+
+## 2. File Not Found Error
+
+### Problem
+- FileNotFoundError: No such file or directory
+### Cause
+- File is not inside the data/ folder
+- Filename mismatch
+- Script run from wrong directory
+
+### Solution
+- Ensure the CSV file is located in:
+  `privacyRisq/data/`
+- Verify the filename matches exactly (case-sensitive).
+- Run the application from the project root:
+```bash
+cd privacyRisq
+python dashboard.py
+```
+---
+## 3. Missing Python Library
+
+### Problem
+```python
+ModuleNotFoundError: No module named 'dash'
+```
+### solution
+- Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+- If needed
+```bash 
+python -m pip install -r requirements.txt
+```
+- Then restart the application.
+
+---
+
+
 
 
 
