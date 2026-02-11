@@ -48,6 +48,7 @@ The user only interacts with the dashboard — no programming knowledge is requi
 ---
 
 ## Project Structure
+```
 privacyRisq/
 │
 ├── dashboard.py
@@ -70,6 +71,7 @@ privacyRisq/
 │ └── style.css
 │
 └── requirements.txt
+```
 
 
 ---
@@ -210,7 +212,7 @@ pd.read_csv("data/your_file.csv", sep=";")
 
 ## 2. File Not Found Error
 
-### Problem
+### Error
 - FileNotFoundError: No such file or directory
 ### Cause
 - File is not inside the data/ folder
@@ -229,7 +231,7 @@ python dashboard.py
 ---
 ## 3. Missing Python Library
 
-### Problem
+### Error
 ```python
 ModuleNotFoundError: No module named 'dash'
 ```
@@ -245,7 +247,24 @@ python -m pip install -r requirements.txt
 - Then restart the application.
 
 ---
+## 4. Port Already in Use
 
+### Error
+- Port 8050 is already in use.
+### Solution
+
+- Option A – Close other running Dash apps.
+
+- Option B – Change the port in `dashboard.py`:
+    `app.run_server(port=8051)`
+- Restart the dashboard.
+
+## 5.Graphs Not Updating After Data Changes
+
+### Solution
+- Stop the dashboard (Ctrl + C).
+- Restart:
+`python dashboard.py`
 
 
 
