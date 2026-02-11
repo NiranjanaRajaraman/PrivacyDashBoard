@@ -1,8 +1,8 @@
-# PrivacyRisq – Interactive Privacy Risk Analysis Dashboard
+# Interactive Privacy Risk Analysis Dashboard
 
 ## Overview
 
-**PrivacyRisq** is an interactive dashboard application designed to analyze and visualize privacy-related incidents using structured datasets.
+It is an interactive dashboard application designed to analyze and visualize privacy-related incidents using structured datasets.
 
 The project transforms complex privacy and risk-related data into clear, interactive visualizations that are easy to explore and understand — even for users without programming knowledge.
 
