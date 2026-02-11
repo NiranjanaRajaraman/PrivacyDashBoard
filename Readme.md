@@ -225,7 +225,7 @@ pd.read_csv("data/your_file.csv", sep=";")
 - Verify the filename matches exactly (case-sensitive).
 - Run the application from the project root:
 ```bash
-cd privacyRisq
+cd privacyDashBoard
 python dashboard.py
 ```
 ---
